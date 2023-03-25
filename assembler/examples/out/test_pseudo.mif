@@ -1,0 +1,9 @@
+DEPTH = 16384;                -- The size of memory in words
+WIDTH = 16;                   -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+1 : A4AB; -- lli, $v0, None, -85
+2 : B400; -- lui, $v0, None, 0
+END;

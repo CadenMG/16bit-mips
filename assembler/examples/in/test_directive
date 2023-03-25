@@ -1,0 +1,11 @@
+# this sets the address counter
+.org 100
+
+# this reserves some space
+.space 0xA
+
+# this sets a byte to this address
+.byte 10
+
+# this sets a word to this address
+.word 10

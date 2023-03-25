@@ -1,0 +1,21 @@
+# Write a subroutine in your assembly language to output
+# a sequence of characters (i.e., a string) stored in memory on the
+# output device.  This subroutine should call the subroutine in part
+# 2 above in order to output each character.  You should determine
+# how you will be representing strings in your architecture.  For
+# example, the string could be either null-terminated or its length
+# could be specified.
+
+msg:
+.asciiz "Hello"
+
+main:
+beq $0, 
+
+# assuming the character is stored in register $v0
+# and the output device device begins at 0x00FF08
+out:
+li  $a0, 0x00FF08
+sw  $v0, 0($a0)
+
+exit:

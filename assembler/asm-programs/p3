@@ -1,0 +1,9 @@
+# Write a subroutine in your assembly language to input a
+# single character from the input device.  The character will be
+# returned in a register or in memory as appropriate for your
+# architecture.
+
+# Assuming the input device begins at 0x00FF04
+
+li  $a0, 0x00FF04
+lw  $v0, 0($a0)

@@ -1,0 +1,4 @@
+msg: # this is a label 
+.asciiz "hello"
+
+add	$v0, $a0, $a1

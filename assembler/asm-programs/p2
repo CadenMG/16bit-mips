@@ -1,0 +1,10 @@
+# Write a subroutine in your assembly language to output
+# a single character on the output device.  The character may be
+# stored in a register or in memory as appropriate for your
+# architecture.
+
+# assuming the character is stored in register $v0
+# and the output device device begins at 0x00FF08
+
+li  $a0, 0x00FF08
+sw  $v0, 0($a0)

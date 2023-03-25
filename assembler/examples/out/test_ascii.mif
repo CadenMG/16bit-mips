@@ -1,0 +1,9 @@
+DEPTH = 16384;                -- The size of memory in words
+WIDTH = 16;                   -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+1 :  68 65 6C 6C 6F; -- .asciiz hello
+7 : 528; -- add, $v0, $a0, $a1
+END;
